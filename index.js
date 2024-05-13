@@ -43,6 +43,10 @@ const isDuplicateSubscription = (newSub) => {
   );
 };
 
+app.get('/', (req,res)=>{
+  res.send('running')
+}
+
 // Handle subscription requests
 app.post('/subscribe', (req, res) => {
   const { subscription } = req.body;
